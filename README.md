@@ -1,5 +1,15 @@
 # Installation #
 
+Make zsh your default shell
+    
+    chsh -s $(which zsh)
+    
+Install Oh-My-Zsh
+
+   sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+Clone repo
+
     git clone git://github.com/juhosa/dotfiles.git
 
 Where possible, Vim plugins are installed as git submodules. Check these out by
@@ -23,9 +33,6 @@ My preferences for Vim are stored in `dotfiles/vimrc`. All plugins and scripts a
 directory.
 
 ## Adding Plugin Bundles ##
-
-Plugins that are published on github can be installed as submodules. For
-example, to install the [JavaScript bundle][jsbun], follow these steps:
 
     cd ~/dotfiles
     git submodule add http://github.com/pangloss/vim-javascript.git vim/bundle/vim-javascript
