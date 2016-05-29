@@ -28,3 +28,5 @@ map <Leader>k <Plug>(easymotion-k)
 
 set background=dark
 colorscheme solarized
+
+let g:used_javascript_libs = 'jquery, underscore, react'
