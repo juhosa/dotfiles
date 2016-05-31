@@ -28,3 +28,6 @@
 [submodule "vim/bundle/javascript-libraries-syntax"]
 	path = vim/bundle/javascript-libraries-syntax
 	url = https://github.com/othree/javascript-libraries-syntax.vim
+[submodule "vim/bundle/vim-numbertoggle"]
+	path = vim/bundle/vim-numbertoggle
+	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle

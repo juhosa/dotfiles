@@ -30,3 +30,4 @@ set background=dark
 colorscheme solarized
 
 let g:used_javascript_libs = 'jquery, underscore, react'
+let g:NumberToggleTrigger=""
