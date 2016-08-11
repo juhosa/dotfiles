@@ -31,3 +31,6 @@
 [submodule "vim/bundle/vim-numbertoggle"]
 	path = vim/bundle/vim-numbertoggle
 	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle
+[submodule "vim/bundle/ctrlp"]
+	path = vim/bundle/ctrlp
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
