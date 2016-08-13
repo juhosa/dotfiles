@@ -1,5 +1,11 @@
 # Installation #
 
+Possibly the easy way is just to
+
+    git clone git://github.com/juhosa/dotfiles.git ~/dotfiles
+    cd ~/dotfiles
+    ./install.sh
+
 Make zsh your default shell
     
     chsh -s $(which zsh)
@@ -18,6 +24,10 @@ running the commands:
     cd dotfiles
     git submodule init
     git submodule update
+
+Or just do:
+
+    git submodule update --init --recursive
 
 Create symlinks:
 
