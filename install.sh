@@ -13,6 +13,8 @@ if [ "$(uname)" == "Darwin" ]; then
 
 	source install/osx.sh
 
+	source install/links.sh
+
 fi
 
 echo "Configuring zsh as default shell"
