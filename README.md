@@ -36,6 +36,7 @@ Create symlinks:
     ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
     ln -s ~/dotfiles/gitconfig ~/.gitconfig
     ln -s ~/dotfiles/global-gitignore ~/.gitignore
+    ln -s ~/dotfiles/install/own_aliases.zsh ~/.oh-my-zsh/custom/own_aliases.zsh
 
 # VIM #
 
