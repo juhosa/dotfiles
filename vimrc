@@ -5,6 +5,7 @@ syntax on
 filetype plugin indent on
 inoremap jk <ESC>
 let mapleader = "\<Space>"
+set dir=/tmp
 
 map <C-n> :NERDTreeToggle<CR>
 
@@ -29,5 +30,6 @@ map <Leader>k <Plug>(easymotion-k)
 set background=dark
 colorscheme solarized
 
-let g:used_javascript_libs = 'jquery, underscore, react'
+" let g:used_javascript_libs = 'jquery,underscore,react,vue'
 let g:NumberToggleTrigger=""
+
