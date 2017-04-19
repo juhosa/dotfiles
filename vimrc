@@ -2,6 +2,7 @@ call pathogen#infect()
 set number
 set encoding=utf-8
 syntax on
+filetype off
 filetype plugin indent on
 inoremap jk <ESC>
 let mapleader = "\<Space>"
