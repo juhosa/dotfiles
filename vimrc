@@ -8,7 +8,8 @@ inoremap jk <ESC>
 let mapleader = "\<Space>"
 set dir=/tmp
 
-map <C-n> :NERDTreeToggle<CR>
+" Open NERDTree and close the adjacent panel
+map <C-n> :NERDTreeToggle<CR><C-w>w:q<CR>
 
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
 
