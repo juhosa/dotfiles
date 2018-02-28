@@ -30,7 +30,7 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
 set background=dark
-colorscheme solarized
+"colorscheme solarized
 
 " let g:used_javascript_libs = 'jquery,underscore,react,vue'
 let g:NumberToggleTrigger=""

@@ -23,12 +23,22 @@
 ! Alt_L -> Alt Gr (keycode 100) (ISO_Level3_Shift)
 ! Control_L -> Alt_L
 !
+! remove Lock = Caps_Lock
+! remove Control = Control_L
+! remove mod1 = Alt_L
+! keysym Control_L = Alt_L
+! keysym Caps_Lock = Control_L
+! keysym Alt_L = ISO_Level3_Shift
+! add Lock = Caps_Lock
+! add Control = Control_L
+! add mod1 = Alt_L
+! ---------
+!
+! Caps_Lock -> Control_L
+!
 remove Lock = Caps_Lock
 remove Control = Control_L
-remove mod1 = Alt_L
 keysym Control_L = Alt_L
 keysym Caps_Lock = Control_L
-keysym Alt_L = ISO_Level3_Shift
 add Lock = Caps_Lock
 add Control = Control_L
-add mod1 = Alt_L
