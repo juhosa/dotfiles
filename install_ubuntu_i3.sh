@@ -27,14 +27,23 @@ sudo echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-
 sudo apt-get update
 
 sudo apt-get install -y i3
-sudo apt-get install -y lxappearance rofi playerctl compton i3blocks imagemagick
-sudo apt-get install -y rofi playerctl compton i3blocks imagemagick
+sudo apt-get install -y lxappearance
+sudo apt-get install -y rofi
+sudo apt-get install -y compton
+sudo apt-get install -y i3blocks
+sudo apt-get install -y imagemagick
 sudo apt-get install -y arc-theme
 sudo apt-get install -y scrot kpcli
 sudo apt-get install -y ranger atool caca-utils highlight libsixel-bin w3m-el cmigemo mpv dict dictd dict-wn
 sudo apt-get install -y feh mupdf
 sudo apt-get install -y zsh
 sudo apt-get install -y xfce4-terminal
+
+cd $HOME/Downloads
+
+wget https://github.com/acrisci/playerctl/releases/download/v0.5.0/playerctl-0.5.0_amd64.deb
+
+sudo dpkg -i playerctl-0.5.0_amd64.deb
 
 mkdir $HOME/.fonts
 
@@ -55,10 +64,6 @@ sudo apt-get install -y moka-icon-theme faba-icon-theme faba-mono-icons
 
 cd $HOME
 
-chsh -s $(which zsh)
-
-sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-
 git clone git://github.com/juhosa/dotfiles.git 
 
 cd dotfiles
@@ -76,6 +81,10 @@ ln -s ~/dotfiles/.zshrc ~/.zshrc
 mkdir $HOME/.config/scripts
 
 cp ohmyzsh/honukai.zsh-theme $HOME/.oh-my-zsh/themes
+
+chsh -s $(which zsh)
+
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 
 ### Restart system
