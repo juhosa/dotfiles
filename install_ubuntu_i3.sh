@@ -77,6 +77,7 @@ ln -s ~/dotfiles/.config/i3 $HOME/.config/i3
 rm -rf $HOME/.config/ranger
 ln -s ~/dotfiles/.config/ranger $HOME/.config/ranger
 ln -s ~/dotfiles/.zshrc ~/.zshrc
+ln -s ~/dotfiles/Xmodmap ~/.Xmodmap
 
 mkdir $HOME/.config/scripts
 
