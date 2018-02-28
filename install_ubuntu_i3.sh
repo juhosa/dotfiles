@@ -54,9 +54,9 @@ cd $HOME/Downloads && wget https://github.com/supermarin/YosemiteSanFranciscoFon
 cd $HOME/Downloads && wget https://github.com/FortAwesome/Font-Awesome/releases/download/5.0.7/fontawesome-free-5.0.7.zip && unzip fontawesome-free-5.0.7.zip && cp fontawesome-free-5.0.7/use-on-desktop/*.otf $HOME/.fonts
 
 # icons
-sudo add-apt-repository ppa:moka/daily
-sudo apt-get update
-sudo apt-get install -y moka-icon-theme faba-icon-theme faba-mono-icons
+#sudo add-apt-repository ppa:moka/daily
+#sudo apt-get update
+sudo apt-get install -y moka-icon-theme
 
 
 
@@ -80,7 +80,7 @@ ln -s ~/dotfiles/.zshrc ~/.zshrc
 
 mkdir $HOME/.config/scripts
 
-cp ohmyzsh/honukai.zsh-theme $HOME/.oh-my-zsh/themes
+cp $HOME/dotfiles/ohmyzsh/honukai.zsh-theme $HOME/.oh-my-zsh/themes
 
 chsh -s $(which zsh)
 
