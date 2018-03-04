@@ -55,3 +55,6 @@
 [submodule "vim/bundle/nerdcommenter"]
 	path = vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "vim/bundle/i3-vim-syntax"]
+	path = vim/bundle/i3-vim-syntax
+	url = https://github.com/potatoesmaster/i3-vim-syntax

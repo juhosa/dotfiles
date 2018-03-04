@@ -97,3 +97,6 @@ export LANG=en_US.UTF-8
 export EDITOR="vim"
 export BROWSER="firefox"
 export PATH="$HOME/.config/scripts:$PATH"
+
+alias ci3="vim ~/dotfiles/.config/i3/config"
+alias czsh="vim ~/dotfiles/.zshrc && source ~/.zshrc"

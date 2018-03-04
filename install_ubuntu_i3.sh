@@ -1,12 +1,12 @@
 #!/bin/bash
 
-if [[ -f $HOME/.ssh/id_rsa ]]
-then
-	echo "ssh key found"
-else
-	echo "generate ssh key first and set it to github!"
-	exit 1
-fi
+#if [[ -f $HOME/.ssh/id_rsa ]]
+#then
+	#echo "ssh key found"
+#else
+	#echo "generate ssh key first and set it to github!"
+	#exit 1
+#fi
 
 
 ### Update the system
@@ -38,6 +38,9 @@ sudo apt-get install -y ranger atool caca-utils highlight libsixel-bin w3m-el cm
 sudo apt-get install -y feh mupdf
 sudo apt-get install -y zsh
 sudo apt-get install -y xfce4-terminal
+sudo apt-get install -y unclutter
+sudo apt-get install -y libx11-dev libxext-dev libxft-dev fonts-inconsolata
+
 
 cd $HOME/Downloads
 
@@ -58,13 +61,9 @@ cd $HOME/Downloads && wget https://github.com/FortAwesome/Font-Awesome/releases/
 #sudo apt-get update
 sudo apt-get install -y moka-icon-theme
 
-
-
 ### Copy configs from dotfiles/ into correct places
 
 cd $HOME
-
-git clone git://github.com/juhosa/dotfiles.git 
 
 cd dotfiles
 
@@ -76,17 +75,23 @@ ln -s ~/dotfiles/install/own_aliases.zsh ~/.oh-my-zsh/custom/own_aliases.zsh
 ln -s ~/dotfiles/.config/i3 $HOME/.config/i3
 rm -rf $HOME/.config/ranger
 ln -s ~/dotfiles/.config/ranger $HOME/.config/ranger
+ln -s ~/dotfiles/.config/scripts $HOME/.config/scripts
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dotfiles/Xmodmap ~/.Xmodmap
 
-mkdir $HOME/.config/scripts
-
-cp $HOME/dotfiles/ohmyzsh/honukai.zsh-theme $HOME/.oh-my-zsh/themes
+#mkdir $HOME/.config/scripts
 
 chsh -s $(which zsh)
 
-sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+#sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh
+sed -i.tmp 's:env zsh::g' install.sh
+sed -i.tmp 's:chsh -s .*$::g' install.sh
+sh install.sh
 
+cp $HOME/dotfiles/ohmyzsh/honukai.zsh-theme $HOME/.oh-my-zsh/themes
+
+echo Install i3-gaps from https://github.com/maestrogerardo/i3-gaps-deb
 
 ### Restart system
 echo "You really should restart the system now for things to take effect."
