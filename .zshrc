@@ -59,7 +59,7 @@ ZSH_THEME="honukai"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git z
+  git z 
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -96,7 +96,7 @@ export LANG=en_US.UTF-8
 
 export EDITOR="vim"
 export BROWSER="firefox"
-export PATH="$HOME/.config/scripts:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.config/scripts:$PATH"
 
 alias ci3="vim ~/dotfiles/.config/i3/config"
 alias czsh="vim ~/dotfiles/.zshrc && source ~/.zshrc"
