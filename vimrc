@@ -35,3 +35,4 @@ set background=dark
 " let g:used_javascript_libs = 'jquery,underscore,react,vue'
 let g:NumberToggleTrigger=""
 
+let g:vim_markdown_folding_disabled = 1

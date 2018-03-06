@@ -58,3 +58,6 @@
 [submodule "vim/bundle/i3-vim-syntax"]
 	path = vim/bundle/i3-vim-syntax
 	url = https://github.com/potatoesmaster/i3-vim-syntax
+[submodule "vim/bundle/vim-markdown"]
+	path = vim/bundle/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
