@@ -1,0 +1,43 @@
+{
+    "editor.minimap.enabled": false,
+    "window.zoomLevel": 0,
+    "workbench.editor.enablePreview": true,
+    "explorer.openEditors.visible": 0,
+    "npm.enableScriptExplorer": true,
+    "workbench.colorTheme": "Dracula",
+    "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "vue",
+            "autoFix": true
+        }
+    ],
+    "editor.lineNumbers": "relative",
+    "latex-workshop.view.pdf.viewer": "browser",
+    "editor.wordWrap": "on",
+    "gitlens.views.lineHistory.enabled": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": false,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.folding": false,
+    "editor.parameterHints.enabled": false,
+    "breadcrumbs.enabled": false,
+
+}
