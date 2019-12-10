@@ -1,3 +1,10 @@
 *.swp
 .config/ranger/bookmarks
 .config/ranger/history
+
+.code_profiles/screencast/*
+!.code_profiles/screencast/data
+.code_profiles/screencast/data/*
+!.code_profiles/screencast/data/User
+.code_profiles/screencast/data/User/*
+!.code_profiles/screencast/data/User/settings.json

@@ -100,3 +100,10 @@ export PATH="$HOME/.local/bin:$HOME/.config/scripts:$PATH"
 
 alias ci3="vim ~/dotfiles/.config/i3/config"
 alias czsh="vim ~/dotfiles/.zshrc && source ~/.zshrc"
+
+alias teach="code --user-data-dir ~/dotfiles/.code_profiles/screencast/data"
+
+export PIPENV_VENV_IN_PROJECT=1
+
+eval "$(pipenv --completion)"
+

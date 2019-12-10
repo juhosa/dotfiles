@@ -1,0 +1,11 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Default Light+",
+    "editor.minimap.enabled": false,
+    "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
+    "vim.insertModeKeyBindings": [
+        {"before": ["j", "k"], "after": ["<Esc>"]}
+    ],
+    "window.zoomLevel": 3
+}
