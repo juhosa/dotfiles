@@ -7,7 +7,7 @@
     "vim.insertModeKeyBindings": [
         {"before": ["j", "k"], "after": ["<Esc>"]}
     ],
-    "window.zoomLevel": 5,
+    "window.zoomLevel": 3,
     "explorer.confirmDelete": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "html.autoClosingTags": false,
@@ -22,4 +22,6 @@
     },
     "editor.renderControlCharacters": false,
     "redhat.telemetry.enabled": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "editor.wordWrap": "off",
 }
