@@ -98,9 +98,10 @@ alt-b = '''exec-and-forget osascript -e '
 tell application "Microsoft Edge" to make new window'
 '''
 
-alt-g = '''exec-and-forget osascript -e '
-tell application "System Events" to tell process "Ghostty" to click menu item "New Window" of menu "File" of menu bar 1'
-'''
+# alt-g = '''exec-and-forget osascript -e '
+# tell application "System Events" to tell process "Ghostty" to click menu item "New Window" of menu "File" of menu bar 1'
+# '''
+alt-g = 'exec-and-forget /Applications/Comet.app/Contents/MacOS/Comet --app=https://gemini.google.com/ --focus=https://gemini.google.com/'
 
 alt-n = '''exec-and-forget osascript -e '
 tell application "Notes" to activate'
