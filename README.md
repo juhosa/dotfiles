@@ -1,29 +1,21 @@
-# Installation #
+# My dotfiles
 
-Possibly the easy way is just to
-
-    git clone git://github.com/juhosa/dotfiles.git ~/dotfiles
-    cd ~/dotfiles
-    ./install.sh
-
-Make zsh your default shell
     
-    chsh -s $(which zsh)
-    
-Install Oh-My-Zsh
+## Install thingies for MacOS
 
-    sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+- Install Oh-My-Zsh
 
-Clone repo
-
-    git clone git://github.com/juhosa/dotfiles.git
+`sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"`
 
 
-Create symlinks:
+- Create symlinks:
 
-    ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
-    ln -s ~/dotfiles/gitconfig ~/.gitconfig
-    ln -s ~/dotfiles/global-gitignore ~/.gitignore
-    ln -s ~/dotfiles/install/own_aliases.zsh ~/.oh-my-zsh/custom/own_aliases.zsh
+```bash
+ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles/gitconfig ~/.gitconfig
+ln -s ~/dotfiles/config/nvim/ ~/.config/nvim
+ln -s ~/dotfiles/config/starship.toml ~/.config/starship.toml
+ln -s ~/dotfiles/config/aerospace/ ~/.config/aerospace
+```
 
 
